@@ -1,15 +1,14 @@
-# frozen_string_literal: true
-
-require 'teamspeak3/version'
+require 'net/ssh'
 
 module Teamspeak3
-  module Ruby
-    require 'net/ssh'
+  class Client
 
     host = 'gahr.dev'
     user = 'serveradmin'
     port = 10_022
     password = ''
+
+
 
     command = 'serverlist'
     Net::SSH.start(host,
