@@ -1,39 +1,13 @@
-# Teamspeak3::Ruby
+# 🎧🎤💎TeamSpeak 3-Ruby Library
+An easy way of interacting with TeamSpeak 3 servers' query server via SSH.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/teamspeak3/ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
+**⚠️ DISCLAIMER:** This gem is currently under development and contains bleeding edge code. Use at your own risk.
 
-TODO: Delete this and the text above, and describe your gem
+## FAQ
+**Q:** Will you support interaction via Telnet?
 
-## Installation
+Since TeamSpeak 3 server version 3.3.0 (see [this changelog](https://forum.teamspeak.com/threads/136554-Release-TeamSpeak-3-Server-3-3-0-amp-3-3-1)), using SSH as server protocol is supported. This should be strongly encouraged as Telnet does not encrypt communication between server and clients which bears a huge security vulnerability.
 
-Add this line to your application's Gemfile:
+**Q:** Will there be a official release?
 
-```ruby
-gem 'teamspeak3-ruby'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install teamspeak3-ruby
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/teamspeak3-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Code of Conduct
-
-Everyone interacting in the Teamspeak3::Ruby project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/teamspeak3-ruby/blob/master/CODE_OF_CONDUCT.md).
+Main scope of this gem is to provide a communication layer between our upcoming Ruby on Rails frontend and a TeamSpeak 3 server. Until further notice, we don't plan to refine this gem to be completely release to RubyGems. Instructions on building or obtaining this gem is TBD.
